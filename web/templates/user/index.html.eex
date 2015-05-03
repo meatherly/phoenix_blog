@@ -8,7 +8,6 @@
       <th>Bio</th>
       <th>NumberOfPets</th>
       <th></th>
-      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -18,7 +17,7 @@
       <td><%= user.email %></td>
       <td><%= user.bio %></td>
       <td><%= user.number_of_pets %></td>
-      <td><%= link "Cars", to: user_car_path(@conn, :index, user), class: "btn btn-default" %></td>
+      
       <td class="text-right">
         <%= link "Show", to: user_path(@conn, :show, user), class: "btn btn-default btn-xs" %>
         <%= link "Edit", to: user_path(@conn, :edit, user), class: "btn btn-default btn-xs" %>
