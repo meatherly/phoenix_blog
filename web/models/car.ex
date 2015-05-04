@@ -1,17 +1,14 @@
-defmodule PhoenixBlog.User do
+defmodule PhoenixBlog.Car do
   use PhoenixBlog.Web, :model
 
-  schema "users" do
+  schema "cars" do
+    belongs_to :user, PhoenixBlog.User
     field :name, :string
-    field :email, :string
-    field :bio, :string
-    field :number_of_pets, :integer
-    has_many :cars, PhoenixBlog.Car
 
     timestamps
   end
 
-  @required_fields ~w(name email bio number_of_pets)
+  @required_fields ~w(name)
   @optional_fields ~w()
 
   @doc """

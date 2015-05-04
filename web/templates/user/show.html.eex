@@ -24,4 +24,4 @@
 
 </ul>
 
-<%= link "Back", to: user_path(@conn, :index) %>
+<%= link "Back", to: user_path(@conn, :index) %> | <%= link "Cars", to: user_car_path(@conn, :index, @user) %>
